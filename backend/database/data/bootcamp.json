@@ -1,0 +1,33 @@
+
+ [
+    {
+        "name":"PHP Xtreme Programming bootcamp",
+        "description": "PHP for desineers",
+        "website": "laravel.org/bootcamps",
+        "phone": "(111)-1111111",
+        "user_id": 1,
+        "average_rating": 4.5,
+        "average_cost": 2000
+    },
+
+    {
+        "name":"Python Xtreme Programming bootcamp",
+        "description": "Python for desineers",
+        "website": "python.org/bootcamps",
+        "phone": "(111)-1111111",
+        "user_id": 1,
+        "average_rating": 4.5,
+        "average_cost": 8000
+    },
+    {
+        "name":"Ruby Xtreme Programming bootcamp",
+        "description": "Ruby for desineers",
+        "website": "ruby.org/bootcamps",
+        "phone": "(111)-1111111",
+        "user_id": 1,
+        "average_rating": 4.5,
+        "average_cost": 8000
+    }
+    
+
+ ]
