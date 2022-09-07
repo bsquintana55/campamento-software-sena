@@ -16,11 +16,8 @@ class CourseResource extends JsonResource
     {
        
         return[
-            "bootcamp_id" => $this->bootcamp_id,
-            'titulo'=> $this->description,
-            'description'=> $this->description,
+            'title'=> $this->description,
             'weeks'=> $this->weeks,
-            'enroll_cost'=> $this->enroll_cost,
             'minimum_skill'=> $this->minimum_skill,
             
       ];
