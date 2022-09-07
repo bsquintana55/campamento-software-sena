@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Courses;
 
-class CourseController extends Controller
+class CourseController extends BaseController
 {
     /**
      * Display a listing of the resource.
@@ -25,14 +25,6 @@ class CourseController extends Controller
      */
     public function store(Request $request, $id)
     {
-        $curso= new Courses();
-        $curso->bootcamp_id =$id;
-        $curso->title = $request->title;
-        $curso->description =$request->description;
-        $curso->weeks =$request->weeks;
-        $curso->enroll_cost =$request->enroll_cost;
-        $curso->minimum_skill =$request->minimum_skill;
-        $curso->save();
 
 
      //  $curso->bootcamp::create($request->all());
@@ -52,7 +44,13 @@ class CourseController extends Controller
      */
     public function show($id)
     {
-        //
+        
+        $idbot=Bootcamp::find($id);
+
+
+        return response()->json( [ "success"=>true,
+        "data"=> new Course(Bootcamp::find($id))
+     ]  ,200);
     }
 
     /**
